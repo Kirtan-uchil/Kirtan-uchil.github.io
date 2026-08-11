@@ -298,32 +298,6 @@ body {
   flex-wrap: wrap;
 }
 
-.scroll-cue {
-  position: absolute;
-  bottom: 36px;
-  left: 32px;
-  width: 26px;
-  height: 42px;
-  border: 2px solid var(--border-hover);
-  border-radius: 20px;
-}
-
-.scroll-cue span {
-  display: block;
-  width: 4px;
-  height: 8px;
-  background: var(--accent-2);
-  border-radius: 4px;
-  margin: 8px auto 0;
-  animation: scrollcue 1.8s ease-in-out infinite;
-}
-
-@keyframes scrollcue {
-  0% { transform: translateY(0); opacity: 1; }
-  70% { transform: translateY(14px); opacity: 0; }
-  100% { opacity: 0; }
-}
-
 /* ===== About ===== */
 .about-grid {
   display: grid;
@@ -571,6 +545,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.edu-item + .edu-item {
+  margin-top: 18px;
 }
 
 .edu-item strong {
